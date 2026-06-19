@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.tooooools.app)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx serve *)",
+      "Bash(mkdir -p \"/Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v1/tools\" && cp \"/Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/index.html\" \"/Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v1/\" && cp \"/Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/style.css\" \"/Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v1/\" && cp \"/Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/app.js\" \"/Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v1/\" && cp \"/Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/tools/\"*.js \"/Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v1/tools/\" && echo \"done\")",
+      "Bash(cp -r /Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v1 /Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v2)",
+      "Bash(cp -r /Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/tools /Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v2/tools)",
+      "Bash(cp -r /Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v2 /Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v3)",
+      "Bash(cp -r /Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/tools /Users/nkilloh/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/Experiments/trn.frm/versions/v3/tools)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\natha\\\\OneDrive\\\\Desktop\\\\apps\\\\trn.frm\" -Recurse -Force)",
+      "Bash(Select-Object FullName)",
+      "Bash(ConvertTo-Json)",
+      "Bash(py --version)",
+      "Bash(npx --version)",
+      "PowerShell(if \\(-not $?\\) { \"Directory is empty or does not exist\" })",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "WebFetch(domain:kllloh.github.io)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(Get-Item \"C:\\\\Users\\\\natha\\\\OneDrive\\\\Desktop\\\\trn.frm\\\\app.js\",\"C:\\\\Users\\\\natha\\\\OneDrive\\\\Desktop\\\\apps\\\\trn.frm\\\\app.js\")",
+      "Bash(Select-Object FullName,Length,LastWriteTime)",
+      "Bash(git -C \"C:\\\\Users\\\\natha\\\\repo\\\\trn.frm\" status)",
+      "Bash(git -C \"C:\\\\Users\\\\natha\\\\repo\\\\trn.frm\" remote -v)",
+      "Bash(git -C \"C:\\\\Users\\\\natha\\\\repo\\\\trn.frm\" init)",
+      "Bash(git -C \"C:\\\\Users\\\\natha\\\\repo\\\\trn.frm\" add .)",
+      "Bash(git -C 'C:\\\\Users\\\\natha\\\\repo\\\\trn.frm' commit -m ' *)"
+    ]
+  }
+}

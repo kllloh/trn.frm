@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>trn.frm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ── Sidebar ── -->
+  <aside id="sidebar">
+    <div id="logo">trn<em>.</em>frm <span class="cursor"></span></div>
+    <div id="sidebar-scroll">
+      <nav id="tool-nav">
+        <div class="tool-grid">
+          <button class="tool-box" draggable="true" data-tool="dithering">DITH</button>
+          <button class="tool-box" draggable="true" data-tool="ascii">ASCI</button>
+          <button class="tool-box" draggable="true" data-tool="edge">EDGE</button>
+          <button class="tool-box" draggable="true" data-tool="stippling">STIP</button>
+          <button class="tool-box" draggable="true" data-tool="half">HALF</button>
+          <button class="tool-box" draggable="true" data-tool="distort">DIST</button>
+          <button class="tool-box" draggable="true" data-tool="displace">DSPL</button>
+          <button class="tool-box" draggable="true" data-tool="recolor">RECO</button>
+          <button class="tool-box" draggable="true" data-tool="scatter">SCAT</button>
+          <button class="tool-box" draggable="true" data-tool="cellular">CELL</button>
+          <button class="tool-box" draggable="true" data-tool="gradients">GRAD</button>
+          <button class="tool-box" draggable="true" data-tool="crt">CRT</button>
+          <button class="tool-box" draggable="true" data-tool="text">TEXT</button>
+          <button class="tool-box" draggable="true" data-tool="glth">GLTH</button>
+          <button class="tool-box" draggable="true" data-tool="blur">BLUR</button>
+          <button class="tool-box" draggable="true" data-tool="pixl">PIXL</button>
+          <button class="tool-box" draggable="true" data-tool="nois">NOIS</button>
+          <button class="tool-box" draggable="true" data-tool="shrp">SHRP</button>
+          <button class="tool-box" draggable="true" data-tool="chop">CHOP</button>
+          <button class="tool-box" draggable="true" data-tool="blok">BLOK</button>
+        </div>
+      </nav>
+      <div id="controls-panel"></div>
+    </div>
+    <div id="sidebar-actions">
+      <button class="btn" id="btn-open">open <kbd>⌘O</kbd></button>
+      <button class="btn" id="btn-save" disabled>save <kbd>⌘S</kbd></button>
+      <input type="file" id="file-input" accept="image/*" hidden>
+    </div>
+  </aside>
+
+  <!-- ── Main: canvas + floating nodes + SVG overlay ── -->
+  <div id="main">
+    <div id="statusbar">
+      <span id="status-tool">trn.frm — <span>no effects</span></span>
+      <span id="status-info"></span>
+      <button id="overlay-toggle" title="toggle overlay">⊹</button>
+      <button id="grid-toggle" title="toggle grid">⊞</button>
+      <button id="theme-toggle" title="toggle light / dark">◐</button>
+    </div>
+    <div id="canvas-wrap">
+      <div id="scene-sizer">
+        <div id="scene">
+          <canvas id="output-canvas" hidden></canvas>
+          <svg id="overlay" xmlns="http://www.w3.org/2000/svg"></svg>
+        </div>
+      </div>
+    </div>
+    <div id="dropzone">
+      <p>drop image here</p>
+      <small>or click open &nbsp;·&nbsp; jpg · png · webp</small>
+    </div>
+    <!-- effect nodes inserted into #scene by JS -->
+  </div>
+
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

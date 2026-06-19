@@ -2,6 +2,8 @@
 
 A browser-based image processing tool. Drop in an image, stack effects, animate parameters across keyframes, and export as GIF.
 
+**[Try it here](https://kllloh.github.io/trn.frm/)**
+
 ## effects
 
 | | |

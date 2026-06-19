@@ -2,8 +2,6 @@
 
 A browser-based image processing tool. Drop in an image, stack effects, animate parameters across keyframes, and export as GIF.
 
-![trn.frm](https://github.com/kllloh/trn.frm/raw/master/screenshot.png)
-
 ## effects
 
 | | |
@@ -36,13 +34,5 @@ A browser-based image processing tool. Drop in an image, stack effects, animate 
 - Scrub the playhead or hit play to preview
 - Set frames and fps in the bottom-left panel
 - Export as GIF with the **export gif** button
-
-## running locally
-
-```bash
-python server.py
-```
-
-Then open [localhost:3742](http://localhost:3742).
 
 No build step. No dependencies. Vanilla JS ES modules.
